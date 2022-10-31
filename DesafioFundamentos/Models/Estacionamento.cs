@@ -18,6 +18,7 @@ namespace DesafioFundamentos.Models
             veiculos.Add(Console.ReadLine());
         }
 
+
         public void RemoverVeiculo()
         {
             Console.WriteLine("Digite a placa do veículo para remover:");
@@ -33,9 +34,6 @@ namespace DesafioFundamentos.Models
                 decimal valorTotal = precoInicial + precoPorHora * horas;
                 veiculos.Remove(placa);
 
-                // TODO: Remover a placa digitada da lista de veículos
-                // *IMPLEMENTE AQUI*
-
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
             }
             else
@@ -43,6 +41,7 @@ namespace DesafioFundamentos.Models
                 Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
             }
         }
+
 
         public void ListarVeiculos()
         {
